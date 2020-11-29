@@ -32,15 +32,15 @@
                 <input
                   type="submit"
                   value="Search"
-                  class="form-control btn btn-outline-primary shadow-sm w-100"
+                  class="form-control btn btn-outline-primary shadow-sm w-80"
                 />
               </div>
               <div class="col-3">
                 <input
                   type="submit"
-                  value="Current"
+                  value="📍"
                   id="current-button"
-                  class="form-conrtrol btn btn-outline-success shadow-sm w-100"
+                  class="form-conrtrol btn btn-outline-success shadow-sm w-50"
                 />
               </div>
             </div>
@@ -68,21 +68,27 @@
             </div>
             <div class="col-6">
               <ul>
-                <li>Humidty: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span> km/h</li>
+                <li id="type">Humidty: <span id="humidity"></span>%</li>
+                <li id="type">Wind: <span id="wind"></span> km/h</li>
               </ul>
             </div>
+          </div>
+          <div class="row weather-forecast" id="forecast"></div>
         </div>
-        <div class="row weather-forecast" id="forecast"></div>
+        <center>
+        <small>
+          <a
+            href="https://github.com/EFarmer-style/FinalWeatherAppProject"
+            target="_blank"
+            >Open-source code</a
+          >
+          by Elisha Farmer
+        </small>
+        </center>
+      </br>
+        <img src="img/weatherselect.jpg" alt="weather image" id="selector" />
       </div>
-      <small>
-        <a
-          href="https://github.com/EFarmer-style/FinalWeatherAppProject"
-          target="_blank"
-          >Open-source code</a
-        >
-        by Elisha Farmer
-      </small>
+      
     </div>
     <script src="src/app.js"></script>
   </body>
